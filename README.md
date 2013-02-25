@@ -1,7 +1,7 @@
 # TOML Shell Generator
 Generate [toml](https://github.com/mojombo/toml) readable documents with a shell command.
 
-## Usage (see [TODO](https://github.com/brntbeer/toml-shell-generate#TODO))
+## Usage (see [TODO](https://github.com/brntbeer/toml-shell-generator#todo))
 
     ./toml.sh .github pug name tater
 
