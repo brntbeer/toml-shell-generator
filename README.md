@@ -1,11 +1,11 @@
-# TOML Shell
+# TOML Shell Generator
 Generate [toml](https://github.com/mojombo/toml) readable documents with a shell command.
 
-## Usage
+## Usage (see [TODO](https://github.com/brntbeer/toml-shell-generate#TODO))
 
     ./toml.sh .github pug name tater
 
-## To Do
+## TODO
 
 * Combine second and third argument with a `.` (ie: `./toml.sh .github pug.name tater`)
   * Maybe with  `sed` to split the `.`
