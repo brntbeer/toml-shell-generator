@@ -6,7 +6,7 @@ if [ -z "$2" ]; then ARG_ERR=ERR; fi
 if [ -z "$1" ]; then ARG_ERR=ERR; fi
 if [ -n "$ARG_ERR" ];
 then
-    echo "Usage: <filename> <name> <subname> <value>"
+    echo "Usage: <filename> <keygroup> <name> <value>"
     exit
 fi
 
