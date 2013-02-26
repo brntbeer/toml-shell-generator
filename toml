@@ -10,6 +10,9 @@ then
 fi
 
 filename=$1
+if [ "$filename" == '--stdout' ]; then
+  filename='/dev/stdout'
+fi
 value=$3
 keygroup=$(echo "$2" | awk -F\. '{print $1}')
 name=$(echo "$2" | awk -F\. '{print $2}')
