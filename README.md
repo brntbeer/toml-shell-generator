@@ -12,3 +12,7 @@ Generate [toml](https://github.com/mojombo/toml) readable documents with a shell
 * Read entire file to look for `keygroup.name` and add item to it if it exist
 * Make it read time as a first class object?
 * Nest as many arguments as possible, split by `.`
+  * Split each `.`
+  * Last one is the `name`
+  * First one is `keygroup`
+  * Others are `keygroup.subname.subname.subname etc until `name`
