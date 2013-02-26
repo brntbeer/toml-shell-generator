@@ -14,7 +14,7 @@ value=$3
 keygroup=$(echo "$2" | awk -F\. '{print $1}')
 name=$(echo "$2" | awk -F\. '{print $2}')
 
-grep "$keygroup" $filename
+grep --quiet "$keygroup" $filename 2>/dev/null
 exit_code=$?
 if [ $exit_code -eq 0 ]
 then
