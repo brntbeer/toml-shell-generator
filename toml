@@ -18,8 +18,9 @@ grep --quiet "$keygroup" $filename 2>/dev/null
 exit_code=$?
 if [ $exit_code -eq 0 ]
 then
-  `sed -i'' -e "/\[git\]/a \
-    $name = "$value"" ".github" `
+  sed -i ".bk" -e "/\["$keygroup"\]/a \\
+  $name = "$value"" $filename
+  $(rm "$filename.bk")
 else
   echo -e "[$keygroup]\n\t$name = \"$value\"" >> $filename
 fi
